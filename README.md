@@ -1,6 +1,6 @@
 # store_DB
 >  1. ER Diagram 작성
->> ![Image](https://github.com/user-attachments/assets/6a87ed12-2c66-47ab-a0a4-ec708473aafa)
+> ![Image](https://github.com/user-attachments/assets/6a87ed12-2c66-47ab-a0a4-ec708473aafa)
 
 <br/>
 
