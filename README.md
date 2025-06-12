@@ -4,15 +4,20 @@
 
 <br/>
 
->  2. DB 작성
+>  2. 관계 스키마로 매핑
+> ![Image](https://github.com/user-attachments/assets/2c8b14a6-16ea-420d-b078-d9907598eab0)
+
+<br/>
+
+>  3. DB 작성
 >> [DB](model.sql)
 
 <br/>
 
->  3. DB 데이터 입력
+>  4. DB 데이터 입력
 >> [input](input.sql)
 
 <br/>
 
->  4. 관련 질의 작성 및 결과
+>  5. 관련 질의 작성 및 결과
 >> [quary](quary.sql)
