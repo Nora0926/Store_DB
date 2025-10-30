@@ -9,16 +9,16 @@ WHERE s.empID = e.empID AND s.storeID = '100005';
 SELECT cw.centID, dc.center_name
 FROM employee e, centerWork cw, distriCenter dc
 WHERE cw.empID = e.empID AND cw.centID = dc.centerID AND e.salary = (SELECT MAX(salary)
-																	                                   FROM employee
-																	                                   WHERE empID IN (SELECT empID
-                                                                                     FROM centerWork));
+																	 FROM employee
+																	  WHERE empID IN (SELECT empID
+                                                                                      FROM centerWork));
 
 --- (3) "400009" 상품이 공급되는 점포이름(일반)
 SELECT s.store_name, d.center_name
 FROM store s, districenter d, supply sp, product p
 WHERE s.storeID = sp.storeID AND 
       sp.productID = p.productID AND 
-	    d.centerID = sp.centID AND 
+	  d.centerID = sp.centID AND 
       p.productID = '400009';
       
 --- (4) 각 점포별 직원들의 급여 평균
@@ -54,9 +54,9 @@ FROM product p
 WHERE EXISTS (SELECT *
 			  FROM store s
 			  WHERE s.address LIKE '%경상북도%' AND NOT EXISTS (SELECT *
-															                           FROM supply sp
-															                           WHERE sp.productID = p.productID AND 
-                                                               sp.storeID = s.storeID));
+															    FROM supply sp
+															    WHERE sp.productID = p.productID AND 
+                                                               		  sp.storeID = s.storeID));
 
 --- (9) 토레타 제로와 세트로 팔리는 상품
 SELECT p.product_name
